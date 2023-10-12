@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-family: sans-serif;
+    font-family: arial,sans-serif;
 }
 
 .header {
@@ -9,14 +9,14 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: small;
-    margin-right: 30px;
+    font-size: 13px;
+    margin-right: 3vh;
 
 }
 
 .header #links {
     display: flex;
-    gap: 30px;
+    gap: 3vh;
 }
 
 .main {
@@ -29,14 +29,14 @@ body {
 }
 
 .main #text {
-    width: 60vh;
     height: 3vh;
     border: solid 1px lightgray;
     padding: 10px;
     border-radius: 15px;
     display: flex;
     align-items: center;
-    gap: 5px
+    gap: 5px;
+    width: 600px;
 
 }
 
@@ -71,7 +71,103 @@ body {
 @media only screen and (max-width: 768px) {
 
     .main #text {
-        width: 350px;
+        width: 300px;
     }
 
+}
+
+.appbar {
+    color: #d93025;
+    font-size: 20px;
+    margin: 25px 35px;
+}
+
+.advanced-main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.filters {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.advanced-inputs #desc {
+
+
+    min-width: 167px;
+    width: 16%;
+    font-size: 16px;
+    min-height: 42px;
+    font-weight: 500;
+    color: #333;
+    vertical-align: middle;
+}
+
+.advanced-inputs #label {
+
+
+    min-width: 167px;
+    width: 16%;
+    height: 42px;
+    color: #222;
+    font-size: 13px;
+    line-height: 16px;
+    vertical-align: middle;
+}
+
+.advanced-inputs {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    margin: 40px 2% 0 45px;
+
+}
+
+.advanced-inputs #text-area {
+    min-width: 167px;
+    min-height: 41px;
+    width: 100%;
+    padding-right: 16px
+
+}
+
+.advanced-inputs #text-area input {
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    font-size: 13px;
+    height: 25px;
+    padding: 1px 8px;
+    width: 100%
+
+}
+
+.button-advanced{
+
+    float: right;
+
+
+}
+
+.button-advanced input{
+    background-color: #4d90fe;
+    border: 1px solid #3079ed;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    height: 30px;
+    min-width: 120px;
+
+
+}
+
+ {
+    border: red solid 1px;
 }

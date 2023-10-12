@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <title>Image Search</title>
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
     <body>
         <div class="header">
             <div id="links">
-                <a href="images.html">Image Search</a>
+                <a href="index.html">Google Search</a>
                 <a href="advanced.html">Advanced Search</a>
             </div>
         </div>
@@ -20,12 +20,13 @@
             <form action="https://google.com/search">
                 <div id="text">
                     <i class="fa fa-search"></i>
+                    <input type="hidden" name="tbm" value="isch">
                     <input type="text" name="q" placeholder="Search Google">
                 </div>
 
                 <div class="buttons">
                     <input type="submit" value="Google Search">
-                    <input type="submit" value="I'm Feeling Lucky">
+
                </div>
             </form>
         </div>
